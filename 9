@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double x = scanner.nextDouble();
+        double y = scanner.nextDouble();
+        int day = 1;
+
+        while (x < y) {
+            x = x + (x * 0.1);
+            day++;
+        }
+
+        System.out.println(day);
+    }
+}
