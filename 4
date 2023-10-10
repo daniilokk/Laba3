@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        int count = 0;
+        int num;
+
+        do {
+            num = scanner.nextInt();
+            sum += num;
+            count++;
+        } while (num != 0);
+
+        double average = (double) sum / (count - 1);
+        System.out.println(average);
+    }
+}
