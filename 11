@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        int count = 0;
+        int previous = scanner.nextInt();
+        int num=previous;
+        while(num !=0){
+            num = scanner.nextInt();
+            if (num > previous) count++;
+                previous=num;
+        }
+        System.out.println("Чисел больше предыдущего- "+ count);
+    }
+}
